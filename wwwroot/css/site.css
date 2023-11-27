@@ -1,0 +1,223 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.meu-botao {
+    background-color: #d7e60d;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+    .meu-botao:hover {
+        background: linear-gradient(to right, #d7e60d, #ecf600);
+    }
+
+
+.minha-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .minha-lista li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+        .minha-lista li:last-child {
+            border-bottom: none;
+        }
+
+        .minha-lista li:hover {
+            background-color: #f0f0f0;
+        }
+
+.texto-negrito-titulo {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; 
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.button-lista {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .button-lista.editar {
+        background-color: #6dd5ed;
+        color: black;
+    }
+
+    .button-lista.deletar {
+        background-color: #e74c3c;
+        color: black;
+    }
+
+    .button-lista.detalhes {
+        background-color: #2ecc71;
+        color: black;
+    }
+
+
+    .button-lista:hover {
+        opacity: 0.9;
+    }
+
+    .button-lista.editar:hover {
+        background: linear-gradient(to right, #6dd5ed, #2193b0);
+    }
+
+    .button-lista.deletar:hover {
+        background-color: #c0392b;
+    }
+
+    .button-lista.detalhes:hover {
+        background-color: #27ae60;
+    }
+
+
+.form-group input[type="submit"] {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coluna-principal {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nav-button {
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #6dd5ed;
+    color: #000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .nav-button:hover {
+        background: linear-gradient(to right, #6dd5ed, #2193b0);
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        transition: text-decoration 0.3s ease;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+.footer-principal {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.personalizado {
+    background-color: #cfe2f3;
+    padding: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.cor-fundo-principal {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.button-voltar {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: red;
+    color: black;
+}
+
+.button-salvar {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: red;
+    color: #6dd5ed;
+}
+
+.button-voltar-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+

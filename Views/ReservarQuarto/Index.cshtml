@@ -1,0 +1,66 @@
+﻿@model IEnumerable<PIM_4.Models.ReservarQuarto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="texto-negrito-titulo">Reserve o Quarto</h1>
+
+<p>
+    <a asp-action="Create"class="meu-botao">Criar Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.IdQuarto)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Disponibilidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroQuarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoQuarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServicoQuarto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.IdQuarto)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disponibilidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroQuarto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Valor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoQuarto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ServicoQuarto)
+                </td>
+                    <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.IdQuarto }, new { @class = "button-lista editar" }) 
+                    @Html.ActionLink("Detalhes", "Details", new { id = item.IdQuarto }, new { @class = "button-lista detalhes" }) 
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.IdQuarto }, new { @class = "button-lista deletar" })
+        </td>
+            </tr>
+        }
+    </tbody>
+</table>

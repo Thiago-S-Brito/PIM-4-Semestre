@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PIM_4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PIM_4.styles.css" asp-append-version="true" />
+</head>
+<body class="cor-fundo-principal">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background: linear-gradient(to right, #6dd5ed, #2193b0);">
+            <div class="container-fluid">
+                <div class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hotel Management</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1", class"navbar">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark nav-button" asp-area="" asp-controller="Funcionario" asp-action="Index">Funcionarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark nav-button" asp-area="" asp-controller="ReservarQuarto" asp-action="Index">Reservar Quarto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark nav-button" asp-area="" asp-controller="Areacomum" asp-action="Index">Área Comum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark nav-button" asp-area="" asp-controller="SolicitarLimpeza" asp-action="Index">Solicitar Limpeza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark nav-button" asp-area="" asp-controller="Pagamento" asp-action="Index">Pagamento</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container personalizado">
+        <main role="main" class="pb-3" >
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer-principal">
+    <div class="footer-principal">
+        <p>&copy; 2023 Hotel Management. Todos os direitos reservados.</p>
+        <p>Links Úteis: <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
+    </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

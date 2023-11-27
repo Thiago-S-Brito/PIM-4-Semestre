@@ -1,0 +1,66 @@
+﻿@model IEnumerable<PIM_4.Models.AreaComum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="texto-negrito-titulo">Áreas Comuns</h1>
+
+<p>
+    <a asp-action="Create"class="meu-botao">Criar Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.IdAreaComum)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.NomeAreaComum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroQuarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reserva)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.IdAreaComum)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeAreaComum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroQuarto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Valor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Horario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Reserva)
+                </td>
+                    <td>
+                    @Html.ActionLink("Editar", "Edit", new { id=item.IdAreaComum }, new { @class = "button-lista editar" })
+                    @Html.ActionLink("Detalhes", "Details", new { id=item.IdAreaComum }, new { @class = "button-lista detalhes" })
+                    @Html.ActionLink("Deletar", "Delete", new { id=item.IdAreaComum }, new { @class = "button-lista deletar" })
+    </td>
+            </tr>
+        }
+    </tbody>
+</table>
