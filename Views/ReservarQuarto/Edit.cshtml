@@ -12,11 +12,11 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            @*<div class="form-group">
-                <label asp-for="IdQuarto" class="control-label"></label>
-                <input asp-for="IdQuarto" class="form-control" />
-                <span asp-validation-for="IdQuarto" class="text-danger"></span>
-            </div>*@
+            <div class="form-group">
+                <label asp-for="IdQuarto" class="control-label campo-display"></label>
+                <input asp-for="IdQuarto" class="form-control campo-display" />
+                <span asp-validation-for="IdQuarto" class="text-danger campo-display"></span>
+            </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Disponibilidade" /> @Html.DisplayNameFor(model => model.Disponibilidade)

@@ -32,11 +32,11 @@
                 <input asp-for="Comanda" class="form-control" />
                 <span asp-validation-for="Comanda" class="text-danger"></span>
             </div>
-            @*<div class="form-group">
-                <label asp-for="IdPagamento" class="control-label"></label>
-                <input asp-for="IdPagamento" class="form-control" />
-                <span asp-validation-for="IdPagamento" class="text-danger"></span>
-            </div>*@
+            <div class="form-group">
+                <label asp-for="IdPagamento" class="control-label campo-display"></label>
+                <input asp-for="IdPagamento" class="form-control campo-display" />
+                <span asp-validation-for="IdPagamento" class="text-danger campo-display"></span>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>

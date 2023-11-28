@@ -10,7 +10,7 @@ namespace PIM_4.Models
 
         public int NumeroQuarto { get; set; }
 
-        public Double Valor { get; set; }
+        public double Valor { get; set; }
 
         public string TipoQuarto { get; set; }
 
